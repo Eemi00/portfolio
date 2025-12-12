@@ -4,28 +4,36 @@ export type Project = {
     tech: string[];
     repo: string;
     live: string;
+    image: string;
+    imageAlt: string;
 }
 
 export const projects: Project[] = [
     {
-        title: 'Projektin Nimi 1',
-        description: 'Lyhyt kuvaus projektista. Kerro ongelma, ratkaisu ja vaikutus.',
-        tech: ['React', 'TypeScript', 'CSS'],
-        repo: 'https://github.com/Eemi00/projekti-1',
-        live: 'https://esimerkki-1.netlify.app',
+        title: 'PHP Lopputyö',
+        description: 'Lopputyön tarkoitus oli harjoitella tietokantayhteyksien ja komentojen käyttöä sekä turvallista tietojen säilytystä.',
+        tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql'],
+        repo: 'https://github.com/Eemi00/php-lopputyo',
+        live: 'https://geronimo.okol.org/~illeem/automiitti/',
+        image: '/project1.png',
+        imageAlt: 'Hero-näkymä lopputyöstä',
     },
     {
-        title: 'Projektin Nimi 2',
-        description: 'Toinen projekti: keskity visuaalisuuteen ja käytettävyyteen.',
-        tech: ['Vite', 'Three.js', 'Framer Motion'],
-        repo: 'https://github.com/Eemi00/projekti-2',
-        live: 'https://esimerkki-2.netlify.app',
+        title: 'React lopputyö',
+        description: 'Lopputyön tarkoitus oli harjoitella React.Js käyttöä. Lisäsin myös projektiin myös rajapinnasta haun sillä halusin harjoitella sitä.',
+        tech: ['Vite', 'Ajax', 'JSON', 'API'],
+        repo: 'https://github.com/Eemi00/react-lopputyo',
+        live: 'https://valtiot.eemille.fi',
+        image: '/project2.png',
+        imageAlt: 'Hero-näkymä lopputyöstä',
     },
     {
-        title: 'Projektin Nimi 3',
-        description: 'Kolmas projekti: suorituskykyinen, API-vetoinen näkymä.',
-        tech: ['Next.js', 'Tailwind', 'API'],
+        title: 'Web lopputyö',
+        description: 'Lopputyön tarkoitus oli ottaa ensi kosketus web ohjelmointiin. Tehtiin simppeli nettisivu jossa on divin värin vaihto ominaisuus.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
         repo: 'https://github.com/Eemi00/projekti-3',
         live: 'https://esimerkki-3.netlify.app',
+        image: '/project3.png',
+        imageAlt: 'Hero-näkymä projektista 1',
     },
 ]

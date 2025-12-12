@@ -8,6 +8,10 @@ type Props = {
 export default function ProjectCard({ project }: Props) {
     return (
         <article className="card project">
+            <div className="project-image">
+                <img src={project.image} alt={project.imageAlt} loading='lazy' />
+            </div>
+
             <div className="project-top">
                 <h3>{project.title}</h3>
                 <div className="project-links">
