@@ -1,11 +1,32 @@
 .skills {
-    padding: clamp(18px, 3vw, 24px);
+    padding: clamp(10px, 2vw, 16px) clamp(4px, 2vw, 8px);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 14px;
+    position: relative;
+}
+
+.skills::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: clamp(14px, 2vw, 20px);
+    opacity: 0.25;
+    pointer-events: none;
+}
+
+.skills-header {
+    position: relative;
+    z-index: 1;
+}
+
+.skills-header p {
+    max-width: 720px;
 }
 
 .skills-grid {
+    position: relative;
+    z-index: 1;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     gap: 10px;
@@ -14,8 +35,8 @@
 .skill-chip {
     padding: 10px 12px;
     border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: var(--panel);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.03);
     text-align: center;
     font-weight: 600;
     color: var(--text);
@@ -23,24 +44,25 @@
 }
 
 .skill-chip:hover {
-    border-color: rgba(255, 255, 255, 0.16);
+    border-color: rgba(255, 255, 255, 0.18);
     transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .skills-marquee {
+    position: relative;
     overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.06);
     border-radius: 999px;
     padding: 10px 0;
     background: rgba(255, 255, 255, 0.02);
-    position: relative;
 }
 
 .skills-marquee::after {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, var(--bg) 0%, transparent 20%, transparent 80%, var(--bg) 100%);
+    background: linear-gradient(90deg, var(--bg) 0%, transparent 16%, transparent 84%, var(--bg) 100%);
     pointer-events: none;
 }
 
@@ -55,6 +77,10 @@
     padding: 8px 14px;
     border-radius: 999px;
     border: 1px solid rgba(255, 255, 255, 0.14);
+    background: linear-gradient(120deg, rgba(143, 123, 255, 0.16), rgba(45, 226, 230, 0.12));
+    font-weight: 600;
+    color: var(--text);
+    white-space: nowrap;
 }
 
 @keyframes scroll {

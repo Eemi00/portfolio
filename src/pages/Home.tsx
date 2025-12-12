@@ -7,7 +7,7 @@ export default function Home() {
         <div className="home">
             <Hero />
             <Skills />
-            <section className="card contact">
+            <section className="contact">
                 <div>
                     <h2 className="section-title">Yhteystiedot</h2>
                     <p className="text-muted">

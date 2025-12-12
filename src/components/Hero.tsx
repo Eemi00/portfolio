@@ -4,6 +4,7 @@ export default function Hero() {
     return (
         <section className="hero card">
             <div className="hero-bg" aria-hidden />
+            <div className="hero-glow" aria-hidden />
             <div className="hero-content">
                 <p className="hero-eyebrow">Tervetuloa</p>
                 <h1 className="hero-title">
@@ -16,7 +17,7 @@ export default function Hero() {
                     <a href="mailto:eemi.illik@gmail.com" className="pill primary">Ota yhteyttä</a>
                     <a href="/projects" className="pill ghost">Tutustu projekteihini</a>
                 </div>
-                <div className="hero-meta">
+                <div className="hero-split">
                     <div>
                         <p className="meta-label">Osaaminen</p>
                         <p className="meta-value">Front-end · UI · Back-end</p>

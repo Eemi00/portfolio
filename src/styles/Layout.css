@@ -1,3 +1,4 @@
 .layout-main {
     padding-top: clamp(28px, 4vw, 44px);
+    padding-bottom: clamp(28px, 4vw, 50px);
 }
