@@ -10,3 +10,9 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: clamp(14px, 3vw, 22px);
 }
+
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
