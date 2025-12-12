@@ -1,0 +1,115 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(20px, 4vw, 28px);
+    border-radius: var(--radius);
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(120% 80% at 20% 20%, rgba(143, 123, 255, 0.24), transparent 45%),
+        radial-gradient(90% 70% at 80% 10%, rgba(45, 226, 230, 0.18), transparent 50%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01));
+    opacity: 0.9;
+    filter: blur(0px);
+    pointer-events: none;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 120px 120px;
+    opacity: 0.08;
+    mix-blend-mode: screen;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 12px;
+    color: var(--muted);
+}
+
+.hero-title {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0;
+    font-size: clamp(32px, 6vw, 46px);
+}
+
+.hero-accent {
+    color: var(--accent-2);
+}
+
+.hero-subtitle {
+    margin: 0;
+    color: var(--muted);
+    max-width: 720px;
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: var(--panel);
+    color: var(--text);
+    transition: var(--transition-strong);
+    font-weight: 600;
+}
+
+.pill:hover {
+    transform: translateY(-1px) scale(1.01);
+    box-shadow: var(--glow);
+}
+
+.pill.primary {
+    background: linear-gradient(120deg, rgba(143, 123, 255, 0.35), rgba(45, 226, 230, 0.25));
+}
+
+.pill.ghost {
+    background: transparent;
+}
+
+.hero-meta {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.meta-label {
+    margin: 0;
+    color: var(--muted);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.meta-value {
+    margin: 4px 0 0;
+    font-weight: 600;
+}
