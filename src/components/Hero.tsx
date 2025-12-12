@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import '../styles/Hero.css'
 
 export default function Hero() {
@@ -15,7 +16,7 @@ export default function Hero() {
                 </p>
                 <div className="hero-actions">
                     <a href="mailto:eemi.illik@gmail.com" className="pill primary">Ota yhteyttä</a>
-                    <a href="/projects" className="pill ghost">Tutustu projekteihini</a>
+                    <Link className="pill ghost" to="/projects">Katso projektit</Link>
                 </div>
                 <div className="hero-split">
                     <div>

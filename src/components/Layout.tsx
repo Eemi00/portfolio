@@ -6,12 +6,12 @@ type Props = { children: React.ReactNode }
 
 export default function Layout({ children }: Props) {
     return (
-        <>
+        <div className="layout">
             <Nav />
             <main className="layout-main">
                 <div className="container">{children}</div>
             </main>
             <Footer />
-        </>
+        </div>
     )
 }
