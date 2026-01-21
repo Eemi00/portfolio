@@ -10,6 +10,15 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        title: 'Macropad Controller',
+        description: 'Projektin tarkoitus oli kasata Macropad ja tehdä custom sovellus sille. Tilasin tuotteet ja kasasin padin itse. 3D Mallinsin ja tulostin kotelon.',
+        tech: ['PYTHON', 'CSS'],
+        repo: 'https://github.com/Eemi00/macro-software',
+        live: 'https://github.com/Eemi00/macro-software',
+        image: '/project4.png',
+        imageAlt: 'Dashboard-näkymä lopputyöstä',
+    },
+    {
         title: 'PHP Lopputyö',
         description: 'Lopputyön tarkoitus oli harjoitella tietokantayhteyksien ja komentojen käyttöä sekä turvallista tietojen säilytystä.',
         tech: ['HTML', 'CSS', 'JavaScript', 'PHP', 'MySql'],
