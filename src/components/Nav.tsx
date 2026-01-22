@@ -9,6 +9,7 @@ export default function Nav() {
                 <div className="nav-links">
                     <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Koti</NavLink>
                     <NavLink to="/projects" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Projektit</NavLink>
+                    <a href="https://whois.eemille.fi" className="nav-link">Whois</a>
                 </div>
             </div>
         </header>
