@@ -12,11 +12,20 @@ export const projects: Project[] = [
     {
         title: 'Macropad Controller',
         description: 'Projektin tarkoitus oli kasata Macropad ja tehdä custom sovellus sille. Tilasin tuotteet ja kasasin padin itse. 3D Mallinsin ja tulostin kotelon.',
-        tech: ['PYTHON', 'CSS'],
+        tech: ['Python', 'CSS'],
         repo: 'https://github.com/Eemi00/macro-software',
         live: 'https://github.com/Eemi00/macro-software',
         image: '/project4.png',
         imageAlt: 'Dashboard-näkymä lopputyöstä',
+    },
+    {
+        title: 'WHOIS Domain-haku',
+        description: 'Projektin tarkoitus oli tehdä itse toimiva API pythonilla joka hakee WHOIS tietoja domaineista ja näyttää ne frontendissä siististi.',
+        tech: ['Python', 'CSS', 'Vite', 'React', 'Typescript'],
+        repo: 'https://github.com/Eemi00/whois-frontend',
+        live: 'https://whois.eemille.fi',
+        image: '/project5.png',
+        imageAlt: 'WHOIS haku-näkymä',
     },
     {
         title: 'PHP Lopputyö',
