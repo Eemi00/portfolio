@@ -15,7 +15,7 @@ export default function Home() {
                     </p>
                 </div>
                 <div className="contact-actions">
-                    <a href="mailto:eemi.illik@gmail.com" className="pill primary">
+                    <a href="mailto:contact@eemille.fi" className="pill primary">
                         <i className="fa-solid fa-envelope"></i> Sähköposti
                     </a>
                     <a href="https://github.com/Eemi00" className="pill ghost" target="_blank" rel="noreferrer">

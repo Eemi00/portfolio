@@ -6,7 +6,7 @@ export default function Footer() {
             <div className="container footer-inner">
                 <span className="text-muted">© {new Date().getFullYear()} Eemi</span>
                 <div className="footer-links">
-                    <a href="mailto:eemi.illik@gmail.com" aria-label="Sähköposti">
+                    <a href="mailto:contact@eemille.fi" aria-label="Sähköposti">
                         <i className="fa-solid fa-envelope"></i>
                     </a>
                     <a href="https://github.com/Eemi00" target="_blank" rel='noreferrer' aria-label="GitHub">
