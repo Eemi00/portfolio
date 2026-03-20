@@ -15,7 +15,7 @@ export default function Hero() {
                     Opiskelen toista vuotta ohjelmistokehittäjäksi ammattikoulussa.
                 </p>
                 <div className="hero-actions">
-                    <a href="mailto:eemi.illik@gmail.com" className="pill primary">Ota yhteyttä</a>
+                    <a href="mailto:contact@eemille.fi" className="pill primary">Ota yhteyttä</a>
                     <Link className="pill ghost" to="/projects">Katso projektit</Link>
                 </div>
                 <div className="hero-split">
